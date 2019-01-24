@@ -20,7 +20,6 @@ Energy = "High"
 # high volume? yes #
 Loudness = "high"
 
-
 print(Artist)
 print(Genre)
 print(Song_Title)
