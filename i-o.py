@@ -15,7 +15,6 @@ if filename not in filedata:
     new_file_name_data = []
 
     new_filename = input("The file your enter is not in the Data Base \n What would you like to name your new file? ")
-    new_file_name_data.append(new_filename)
 
     data_to_file = input("enter the text you want to write to the file\n : ")
     new_file_name_data.append(data_to_file)
@@ -67,5 +66,4 @@ elif filename in filedata:
             answer.write(data)
 
     answer.close()
-
 
