@@ -28,7 +28,7 @@ class Vehicle:
     
     
 class Cars(Vehicle):
-    def __init__(self, make="NaN", model="NaN", year=1900, weight=0):
+    def __init__(self, make, model, year, weight, carIsDriving = False):
         Vehicle.__init__(self, make, model, year, weight)
         self.carIsDriving = False
 
@@ -49,9 +49,15 @@ class Cars(Vehicle):
 bmw = Cars(make='BMW', model='i8', year=2019, weight=4000)
 tesla = Cars(make='tesla', model='mode 2', year=2019, weight=4000)
 toyota = Cars(make='toyota', model='prius', year=2019, weight=4000)
-    
+
+
+
 
 print(bmw)
+print(bmw.vehicleYear)
+bmw.setYear("304")
+print(bmw.vehicleYear)
+
 print(bmw.vehicleMake)
 print(bmw.vehicleNeedMaintence)
 bmw.drive()
