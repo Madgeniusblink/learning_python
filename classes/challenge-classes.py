@@ -38,7 +38,7 @@ class Cars(Vehicle):
         self.carIsDriving = False
         if self.carIsDriving is True:
             self.vechicleTripSinceMaintenance += 1
-        elif self.vechicleTripSinceMaintenance < 100:
+        elif self.vechicleTripSinceMaintenance > 100:
             self.vechicleNeedMaintence = True
 
 
